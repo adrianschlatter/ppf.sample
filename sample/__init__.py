@@ -1,4 +1,9 @@
+"""
+Sample
+++++++
 
-def main():
-    """Entry point for the application script"""
-    print("Call your main application code here")
+Sample is a package demonstrating how to package Python code
+"""
+
+# import every function, class, etc. that should be visible in the package
+from .module import myFunction
