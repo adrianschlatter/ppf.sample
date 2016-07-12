@@ -7,10 +7,10 @@ as unittests by 'python setup.py test'.
 """
 
 import unittest
-import myPackage  # import code to be tested here (add to your python path!)
+import sample  # import code to be tested here (add to python path!)
 
 
-class Test_Something(unittest.TestCase):
+class Test_myFunction(unittest.TestCase):
     """Test something. All methods in this class named 'test_XXX' are assumed
     to be tests."""
 
