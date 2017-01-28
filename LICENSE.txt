@@ -1,4 +1,4 @@
-Copyright (c) 2016, Adrian Schlatter
+Copyright (c) 2017, Adrian Schlatter
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
