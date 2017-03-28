@@ -21,8 +21,7 @@ class Test_myFunction(unittest.TestCase):
     def test_one(self):
         """1st test"""
 
-        # add here test code
-        self.assertTrue(True)
+        self.assertEqual(sample.myFunction(4), 2)
 
     def test_two(self):
         """2nd test"""
