@@ -66,8 +66,10 @@ setup(
     # Choose your license
     license='Revised BSD',
 
-    # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
-    classifiers=[
+    # Classifiers help users find your project by categorizing it.
+    #
+    # For a list of valid classifiers, see https://pypi.org/classifiers/
+    classifiers=[  # Optional
         # How mature is this project? Common values are
         #   3 - Alpha
         #   4 - Beta
