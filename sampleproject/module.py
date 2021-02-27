@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-A module providing functions, classes to be included in the package
+A module providing functions, classes to be included in the package.
 """
 
 

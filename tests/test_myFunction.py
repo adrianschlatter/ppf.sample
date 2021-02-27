@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Unit test example
+A template script demonstrating how to do unit testing.
 
 All files in this directory named "test_*.py" are automatically identified
 as unittests by 'python setup.py test'.
 """
 
 import unittest
-import sample  # import code to be tested here (add to python path!)
+# import code to be tested here (add to your python path!)
+import sampleproject as dut
 
 
 class Test_myFunction(unittest.TestCase):
@@ -21,7 +22,7 @@ class Test_myFunction(unittest.TestCase):
     def test_one(self):
         """1st test"""
 
-        self.assertEqual(sample.myFunction(4), 2)
+        self.assertAlmostEqual(dut.my_function(5.)**2, 5.)
 
     def test_two(self):
         """2nd test"""
