@@ -6,9 +6,16 @@ This module shows how to program a command-line tool using plumbum.
 It consists of a tool named 'clt' (implemented in the class CommandLineTool)
 that has a single sub-command 'say'.
 
->>> clt say --hello user
-hello user
+>>> clt say --hello world
+dear world
 
+Depending on your preferences in ~/.clt_rc, your output may differ. If you
+set 'colloquial' to 'True', it will say 'hello world'.
+
+See `plumbum documentation`_ for more information.
+
+.. _plumbum documentation:
+        <https://plumbum.readthedocs.io/en/latest/cli.html#guide-cli>
 .. author: Adrian Schlatter
 """
 
@@ -38,10 +45,18 @@ class CLTSay(cli.Application):
 
     @cli.switch('--hello')
     def hello(self):
-        self.something = 'hello'
+        "Say hello"
+        with cli.Config('~/.clt_rc') as config:
+            colloquial = config.get('colloquial', False) == 'True'
+
+        if colloquial:
+            self.something = 'hello'
+        else:
+            self.something = 'dear'
 
     @cli.switch('--bye')
     def bye(self):
+        "Say bye"
         self.something = 'bye'
 
     def main(self, *args):
