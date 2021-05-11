@@ -12,7 +12,7 @@ recommendations for version control, documentation, or testing.
 
 [The source for this project is available here][src].
 
-Most of the configuration for a Python project is done in the `setup.py` file,
+Most of the configuration for a Python project is done in the `setup.cfg` file,
 an example of which is included in this project. You should edit this file
 accordingly to adapt this sample project to your needs.
 
@@ -37,3 +37,44 @@ may be appropriate.
 [rst]: http://docutils.sourceforge.net/rst.html
 [md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
 [md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
+
+----
+
+# These are my personal best practices
+
+## Testing
+
+Write unittests. Use tox.
+
+## Privacy vs contactability
+
+Your personal email address is prone to land in the dirty hands of spammers.
+Therefore, you want to publish it only when necessary. However, you need to
+be contacable somehow, if only:
+
+* for questions on your project, particularly licensing questions
+* to enable anyone to applaud your work ;)
+
+Therefore, I consider good practice to publish an email address in exactly
+one, central place. That central place is your GitHub profile: If you need
+to change the email address (e.g., because of too much spam), this is easy to
+do. This also means that you do *not* publish your email address:
+
+* in your commit messages
+* in setup.py, setup.cfg, or similar
+* on pypi
+
+Instead, just provide a link to your (GitHub-) project. GitHub can also help you
+with keeping your (private) email addresses private: Check the email settings
+to:
+
+* tell GitHub to *not* show your email in web-based commits
+* configure your git client to use your noreply GitHub address in commit
+  messages
+* inform GitHub (but no one else) what your private email addresses are
+* tell GitHub to reject command-line commits that would reveal (one of) your
+  private emails addresses
+
+## Distribution
+
+Write README.md so that it works simultaneously on 
