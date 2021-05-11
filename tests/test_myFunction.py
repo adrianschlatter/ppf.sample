@@ -8,7 +8,7 @@ as unittests by 'python setup.py test'.
 
 import unittest
 # import code to be tested here (add to your python path!)
-import sampleproject as dut
+import sample as dut
 
 
 class Test_myFunction(unittest.TestCase):
