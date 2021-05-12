@@ -40,7 +40,7 @@ may be appropriate.
 
 ----
 
-# These are my personal best practices
+# Personal best practices
 
 ## Testing
 
@@ -50,7 +50,7 @@ Write unittests. Use tox.
 
 Your personal email address is prone to land in the dirty hands of spammers.
 Therefore, you want to publish it only when necessary. However, you need to
-be contacable somehow, if only:
+be contactable somehow, if only:
 
 * for questions on your project, particularly licensing questions
 * to enable anyone to applaud your work ;)
@@ -77,4 +77,4 @@ to:
 
 ## Distribution
 
-Write README.md so that it works simultaneously on 
+Write README.md so that it works simultaneously on GitHub and pypi.org.
