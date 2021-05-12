@@ -9,7 +9,7 @@ from .utils import export
 
 
 @export    # adds myFunction to __all__
-def myFunction(x):
+def my_function(x):
     """Returns root of x."""
 
     return(np.sqrt(x))
