@@ -44,7 +44,15 @@ may be appropriate.
 
 ## Testing
 
-Write unittests. Use tox.
+Write unittests. Use tox. On github, use a workflow to ensure quality of
+pull requests. Require pull requests for external developers to contribute
+to develop branch. Require pull requests for everyone when pushing to
+master (i.e., release).
+
+This repository has said workflow pre-configured in the .github/ directory.
+The branch protection settings have to be configured via the github
+web interface.
+
 
 ## Privacy vs contactability
 
