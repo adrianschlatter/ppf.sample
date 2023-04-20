@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
+
 """
 A template script demonstrating how to do unit testing.
 
 All files in this directory named "test_*.py" are automatically identified
-as unittests by 'python setup.py test'.
+as unittests by 'pytest'.
 """
 
 import unittest
 # import code to be tested here (add to your python path!)
-import sample as dut
+import ppf.sample as dut
 
 
 class Test_myFunction(unittest.TestCase):

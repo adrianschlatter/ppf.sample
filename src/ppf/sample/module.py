@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 """
 A module providing functions, classes to be included in the package.
 """
@@ -12,4 +13,4 @@ from .utils import export
 def my_function(x):
     """Returns root of x."""
 
-    return(np.sqrt(x))
+    return np.sqrt(x)

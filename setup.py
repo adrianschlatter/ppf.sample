@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-A setuptools based setup module.
+# required for backwards compatibility
 
-See:
-https://packaging.python.org/en/latest/distributing.html
-https://github.com/pypa/sampleproject
-"""
+from setuptools import setup
 
-import setuptools
-
-setuptools.setup()
+setup()

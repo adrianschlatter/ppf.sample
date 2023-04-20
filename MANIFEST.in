@@ -8,4 +8,4 @@ include LICENSE
 
 # Include the data files
 recursive-include data *
-include src/sample/package_data.dat
+include src/ppf/sample/package_data.dat
