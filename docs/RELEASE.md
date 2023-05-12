@@ -3,7 +3,7 @@
 Make sure that you:
 
 - successfully ran tox
-- bumped up the version number (/setup.cfg)
+- bumped up the version number (__init__.py of package)
 - updated the changelog (/docs/README.md)
 - checked the README for pypi (/docs/README_pypi.md)
 
