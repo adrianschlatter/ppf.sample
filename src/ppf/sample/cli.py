@@ -31,7 +31,7 @@ class CommandLineTool(cli.Application):
     """
 
     PROGNAME = 'clt'
-    VERSION = pkg_resources.require('sampleproject')[0].version
+    VERSION = pkg_resources.require('ppf_sample')[0].version
 
     def main(self, *args):
         pass

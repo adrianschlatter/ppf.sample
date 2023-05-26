@@ -7,7 +7,7 @@ The source of the original sample project is available [here][src].
 
 [packaging guide]: https://packaging.python.org
 [dist tutorial]: https://packaging.python.org/tutorials/packaging-projects/
-[src]: https://github.com/pypa/sampleproject
+[src]: https://github.com/pypa/sample
 
 This project is configured to what I personally like to use, namely:
 
