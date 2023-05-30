@@ -7,7 +7,7 @@ The source of the original sample project is available [here][src].
 
 [packaging guide]: https://packaging.python.org
 [dist tutorial]: https://packaging.python.org/tutorials/packaging-projects/
-[src]: https://github.com/pypa/sample
+[src]: https://github.com/pypa/sampleproject
 
 This project is configured to what I personally like to use, namely:
 
@@ -73,11 +73,11 @@ structure:
 │           └── cli.py              A cmd-line utility
 │           └── module.py
 │           └── package_data.dat
-│           └── simple.py
 │           └── utils.py            Helper functions for packaging
 ├── tests                           Unit tests package
 │   ├── __init__.py
-│   └── test_myFunction.py          Unit tests
+│   ├── test_cli.py                 Unit tests
+│   └── test_myFunction.py          More unit tests
 └── tox.ini                         tox configuration
 ```
 
