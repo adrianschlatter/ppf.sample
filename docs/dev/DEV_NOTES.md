@@ -15,3 +15,10 @@
 needs setuptools>=40.5.0 because we run `python setup.py check -m` and
 earlier version do not understand the [option.data_files] section in
 our setup.cfg.
+
+# (Fixed) Issues
+
+* tox.ini: Don't use '{envbindir}/pytest' (or similar). This works on
+           POSIX but not on Windows (due to the slash).
+           Instead, simply use 'pytest'
+  ![envbindir problem on windows](../imgs/envbindir_issue.png)
