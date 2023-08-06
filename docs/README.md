@@ -1,9 +1,9 @@
 # Sample Project
 
-This sample project is based on the one provided by the
-[Python Packaging User Guide][packaging guide]'s
-[Tutorial on Packaging and Distributing Projects][dist tutorial].
-The source of the original sample project is available [here][src].
+This sample project is based on the one provided by the [Python Packaging User
+Guide][packaging guide]'s [Tutorial on Packaging and Distributing
+Projects][dist tutorial].  The source of the original sample project is
+available [here][src].
 
 [packaging guide]: https://packaging.python.org
 [dist tutorial]: https://packaging.python.org/tutorials/packaging-projects/
@@ -17,8 +17,43 @@ This project is configured to what I personally like to use, namely:
 * pyproject.toml / setup.cfg / setup.py
 * tox
 
+[Note: The first part of this document is mainly template text. But the Chapter
+"About ppf.sample" is actual explanation of why ppf.sample is how it is.]
 
-## ppf.sample
+
+# Installation
+
+ppf.sample is available via [pypi](https://pypi.org):
+
+```
+pip install ppf.sample
+```
+
+
+# Still reading?
+
+If you read this far, you're probably not here for the first time.  If you use
+and like this project, would you consider giving it a Github Star?  The button
+is at the top of this website.
+
+
+# Contributing
+
+Did you find a bug and would like to report it? Or maybe you've fixed it
+already or want to help fixing it? That's great! Please read
+[CONTRIBUTING](./CONTRIBUTING.md) to learn how to proceed.
+
+To help ascertain that contributing to this project is a pleasant experience,
+we have established a [code of conduct](./CODE_OF_CONDUCT.md). You can expect
+everyone to adhere to it, just make sure you do as well.
+
+
+# Change Log
+
+* 0.1:	Initial demo.
+
+
+# About ppf.sample
 
 The name of this sample package is `sample` and it is configured to live
 inside a _namespace_ named `ppf`. `ppf.sample` is a so-called _namespace_

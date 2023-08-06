@@ -17,7 +17,10 @@ Thank for considering a contribution! Any help is greatly appreciated.
   maintainer to reproduce your problem.
 
 
-## Did you write a patch?
+## Contributing Code
+
+You want to help with a bug or contribute a new feature? The [development
+docs](./dev/DEV_DOCS.md) might help you along.
 
 You already have a solution for an issue or a new feature? All the better! A
 pull request ("PR") is what you want to do.
@@ -42,6 +45,6 @@ pull request ("PR") is what you want to do.
 
 ## Final remarks
 
-Currently, ppf.sample is maintained in the spare time of a single person having
+Currently, this project is maintained in the spare time of a single person having
 a family and a job. If you do not get immediate feedback to your issue or pull
 request, please have some patience.

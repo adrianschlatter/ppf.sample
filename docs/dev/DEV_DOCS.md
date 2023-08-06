@@ -1,4 +1,36 @@
-# Pure pyproject.toml
+# Development Docs
+
+This is the top-level development document. It provides an overview and links
+to more specific documents.
+
+
+## Getting Started
+
+To start developing, you will need:
+
+```
+pip install .[test]
+pip install .[dev]
+```
+
+(Note: Depending on your shell, you might need to escape '[' and ']'.)
+
+If you use conda, additionally install:
+
+```
+pip install .[dev-conda]
+```
+
+
+## Release Process
+
+"[Release-Process](./release-process.md)" describes how we do a release.
+
+
+[Above: Template doc. Below: Real documentation of ppf.sample]
+
+
+## Pure pyproject.toml
 
 * python3.5 fails when setup.py is missing
 * python3.6 fails to properly install check-manifest, flake8
@@ -10,11 +42,13 @@
   install check-manifest, flake8. Apparently, there is a problem running
   pip install .\[test\]
 
-# Testing
+
+## Testing
 
 needs setuptools>=40.5.0 because we run `python setup.py check -m` and
 earlier version do not understand the [option.data_files] section in
 our setup.cfg.
+
 
 # (Fixed) Issues
 
