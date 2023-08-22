@@ -22,6 +22,14 @@ pip install .[dev-conda]
 ```
 
 
+## Packaging
+
+This package inherits its structure, build- and distribution "mechanics"
+from [ppf.sample](https://github.com/adrianschlatter/ppf.sample). And
+improvements gained with this package are also meant to flow back into said
+template project.
+
+
 ## Release Process
 
 "[Release-Process](./release-process.md)" describes how we do a release.
