@@ -37,7 +37,7 @@ twine upload dist/*
 ## Test Install
 
 Activate an environment that does not have a (development-) installation of
-ppf.sample. Run
+this package. Run
 
 ```
 pip install ppf.sample
