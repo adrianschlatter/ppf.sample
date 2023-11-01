@@ -3,14 +3,14 @@
 """
 This module shows how to program a command-line tool using plumbum.
 
-It consists of a tool named 'clt' (implemented in the class CommandLineTool)
-that has a single sub-command 'say'.
+It consists of a tool named 'nameoftool' (implemented in the class
+CommandLineTool) that has a single sub-command 'say'.
 
->>> clt say --hello world
+>>> nameoftool say --hello world
 dear world
 
-Depending on your preferences in ~/.clt_rc, your output may differ. If you
-set 'colloquial' to 'True', it will say 'hello world'.
+Depending on your preferences in ~/.nameoftool_rc, your output may differ.
+If you set 'colloquial' to 'True', it will say 'hello world'.
 
 See `plumbum documentation`_ for more information.
 
@@ -27,10 +27,10 @@ class CommandLineTool(cli.Application):
     """
     An example for a command line tool.
 
-    Its name is 'clt' and it provides a single sub-command named 'say'.
+    Its name is 'nameoftool' and it provides a single sub-command named 'say'.
     """
 
-    PROGNAME = 'clt'
+    PROGNAME = 'nameoftool'
     VERSION = pkg_resources.require('ppf_sample')[0].version
 
     def main(self, *args):
@@ -46,7 +46,7 @@ class CLTSay(cli.Application):
     @cli.switch('--hello')
     def hello(self):
         "Say hello"
-        with cli.Config('~/.clt_rc') as config:
+        with cli.Config('~/.nameoftool_rc') as config:
             colloquial = config.get('colloquial', False) == 'True'
 
         if colloquial:
