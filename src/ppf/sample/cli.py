@@ -20,7 +20,10 @@ See `plumbum documentation`_ for more information.
 """
 
 from plumbum import cli
-import pkg_resources  # part of setuptools
+try:
+    from importlib.metadata import version
+except ImportError:
+    from importlib_metadata import version
 
 
 class CommandLineTool(cli.Application):
@@ -31,7 +34,7 @@ class CommandLineTool(cli.Application):
     """
 
     PROGNAME = 'nameoftool'
-    VERSION = pkg_resources.require('ppf_sample')[0].version
+    VERSION = version('ppf-sample')
 
     def main(self, *args):
         pass
