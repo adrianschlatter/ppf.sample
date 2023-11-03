@@ -4,8 +4,9 @@
 These are other projects I am or have been working on:
 
 * [threadlib](https://github.com/adrianschlatter/threadlib): OpenSCAD library
-  providing screw threads RocketFins: PET-bottle-to-Gardena-nozzle adapter for
-  water rockets
+  providing screw threads
+* [RocketFins](https://github.com/adrianschlatter/RocketFins):
+  PET-bottle-to-Gardena-nozzle adapter for water rockets
 * [ppf.datamatrix](https://github.com/adrianschlatter/ppf.datamatrix): Python
   package to create datamatrix codes
 * [ppf.jabref](https://github.com/adrianschlatter/ppf.jabref): Python interface
