@@ -34,7 +34,7 @@ class CommandLineTool(cli.Application):
     """
 
     PROGNAME = 'nameoftool'
-    VERSION = version('ppf-sample')
+    VERSION = version('.'.join(__name__.split('.')[:-1]))
 
     def main(self, *args):
         pass

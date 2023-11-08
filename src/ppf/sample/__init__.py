@@ -11,7 +11,7 @@ try:
 except ImportError:
     from importlib_metadata import version
 
-__version__ = version('ppf-sample')
+__version__ = version(__name__)
 
 # import every function, class, etc. that should be visible in the package
 from .module import *
