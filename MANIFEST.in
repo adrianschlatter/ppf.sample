@@ -1,9 +1,8 @@
-# Include the docs
-include docs/*.md
-
-# Include the license file
-include LICENSE
-
-# Include the data files
-recursive-include data *
+# For unknown reasons, setuptools-scm misses this one:
 include src/ppf/sample/package_data.dat
+
+# These are not needed in the distribution:
+recursive-exclude tests *
+exclude tox.ini
+exclude .gitignore
+recursive-exclude .github *

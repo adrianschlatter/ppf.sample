@@ -6,8 +6,12 @@ Sample
 
 Sample is a package demonstrating how to package Python code
 """
+try:
+    from importlib.metadata import version
+except ImportError:
+    from importlib_metadata import version
 
-__version__ = '3.0'
+__version__ = version('ppf-sample')
 
 # import every function, class, etc. that should be visible in the package
 from .module import *
