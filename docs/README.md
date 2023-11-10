@@ -178,7 +178,25 @@ in the repository.
 `tox` is configured to build the package, install it in a fresh python
 environment, and run the tests (`flake8`, `python setup.py check`,
 `check-manifest`, and `pytest`). This is repeated for multiple python
-version (configurable in `tox.ini`).
+versions (configurable in `tox.ini`). By default, tox also builds a source
+distribution in every environment. If your package will be distributed as a
+universal wheel, there is a quicker way: Build the wheel first, then tell tox
+to always install this wheel into each python environment:
+
+```shell
+cd <root of repo>
+python -m build --wheel
+tox --parallel --installpkg dist/<the_wheel>
+```
+
+A test (on a slow computer) resulted in (11 + 283) seconds for build
++ ```tox --parallel --installpkg```, and 353 seconds for ```tox --parallel```.
+Also, you usually want to test whether users will be able to install and run
+your package, not whether they are able to build it.
+
+A word of caution on ```tox --parallel```: It is ofter much quicker than not
+using ```--parallel``` but sometimes it fails (in some environments) although
+```tox``` without ```--parallel``` does not.
 
 [GitHub workflows][workflows] live inside `.github/workflows/`. This
 project pre-defines a workflow in `tox.yml` that instructs GitHub to run
