@@ -24,6 +24,7 @@ try:
     from importlib.metadata import version
 except ImportError:
     from importlib_metadata import version
+from .utils import ModuleName
 
 
 class CommandLineTool(cli.Application):
@@ -34,7 +35,7 @@ class CommandLineTool(cli.Application):
     """
 
     PROGNAME = 'nameoftool'
-    VERSION = version('.'.join(__name__.split('.')[:-1]))
+    VERSION = version(str(ModuleName(__name__)[:-1].normalized))
 
     def main(self, *args):
         pass
