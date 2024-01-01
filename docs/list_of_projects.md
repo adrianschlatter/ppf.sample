@@ -11,8 +11,10 @@ These are other projects I am or have been working on:
   package to create datamatrix codes
 * [ppf.jabref](https://github.com/adrianschlatter/ppf.jabref): Python interface
   to JabRef's SQL database
-* [webref](https://github.com/adrianschlatter/webref): Docker container running
-  a Flask web-app providing a web-interface to your JabRef database
+* [ppf.webref](https://github.com/adrianschlatter/ppf.webref): Flask web-app
+  providing a web-interface to a JabRef database
+* [docker.webref](https://github.com/adrianschlatter/docker.webref): Docker
+  container running `ppf.webref`
 * [rst4html](https://github.com/adrianschlatter/rst4html): rst to html
   converter with extra features
 * [pyConic](https://github.com/adrianschlatter/pyConic): Python tools for conic
