@@ -10,10 +10,9 @@ try:
     from importlib.metadata import version
 except ImportError:
     from importlib_metadata import version
-from .utils import ModuleName
 
 
-__version__ = version(str(ModuleName(__name__).normalized))
+__version__ = version(__name__)
 
 # import every function, class, etc. that should be visible in the package
 from .module import *
