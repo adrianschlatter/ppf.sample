@@ -18,16 +18,10 @@ class Test_myFunction(unittest.TestCase):
         """Code that will be run before each test in this class"""
         pass
 
-    def test_one(self):
-        """1st test"""
+    def test_known_property(self):
+        """Square of result of my_function(x) must be x."""
 
         self.assertAlmostEqual(dut.my_function(5.)**2, 5.)
-
-    def test_two(self):
-        """2nd test"""
-
-        # add here test code
-        self.assertTrue(True)
 
 
 if __name__ == '__main__':

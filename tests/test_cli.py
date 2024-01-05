@@ -15,6 +15,7 @@ class Test_CLI(unittest.TestCase):
         pass
 
     def test_system_exit(self):
+        """Running `cli` will end in the tool exiting with SystemExit"""
         try:
             cli.main()
         except SystemExit:
