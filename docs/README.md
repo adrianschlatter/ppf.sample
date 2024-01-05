@@ -1,5 +1,7 @@
 # Sample Project
 
+<img alt="pypi downloads/month" src="https://img.shields.io/pypi/dm/ppf.sample.svg">
+
 This sample project is based on the one provided by the [Python Packaging User
 Guide][packaging guide]'s [Tutorial on Packaging and Distributing
 Projects][dist tutorial].  The source of the original sample project is
@@ -18,7 +20,7 @@ This project is configured to what I personally like to use, namely:
 * tox
 
 [Note: The first part of this document is mainly template text. But the Chapter
-"About ppf.sample" is actual explanation of why ppf.sample is how it is.]
+"About ppf.sample" is explaning oeouf why ppf.sample is how it is.]
 
 
 # Installation
