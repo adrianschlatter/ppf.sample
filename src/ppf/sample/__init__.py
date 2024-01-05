@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-
 """
 Sample
 ++++++
 
 Sample is a package demonstrating how to package Python code
 """
+
 try:
     from importlib.metadata import version
 except ImportError:

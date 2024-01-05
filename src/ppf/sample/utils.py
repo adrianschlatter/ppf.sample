@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-
 """
-:author: Adrian Schlatter
+Packaging helpers
 """
 
 import sys

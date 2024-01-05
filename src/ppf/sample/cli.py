@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 This module shows how to program a command-line tool using plumbum.
 
@@ -16,7 +15,6 @@ See `plumbum documentation`_ for more information.
 
 .. _plumbum documentation:
         <https://plumbum.readthedocs.io/en/latest/cli.html#guide-cli>
-.. author: Adrian Schlatter
 """
 
 from plumbum import cli

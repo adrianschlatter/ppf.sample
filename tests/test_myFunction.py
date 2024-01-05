@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 A template script demonstrating how to do unit testing.
 
@@ -8,7 +7,6 @@ as unittests by 'pytest'.
 """
 
 import unittest
-# import code to be tested here (add to your python path!)
 import ppf.sample as dut
 
 
@@ -33,6 +31,4 @@ class Test_myFunction(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # This enables running the unit tests by running this script which is
-    # much more convenient than 'python setup.py test' while developing tests.
     unittest.main()

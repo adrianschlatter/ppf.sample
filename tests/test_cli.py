@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 test command-line tool
 """
@@ -25,6 +24,4 @@ class Test_CLI(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # This enables running the unit tests by running this script which is
-    # much more convenient than 'python setup.py test' while developing tests.
     unittest.main()
