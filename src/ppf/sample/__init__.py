@@ -19,3 +19,4 @@ from .module import *
 
 del module
 del utils
+del version
