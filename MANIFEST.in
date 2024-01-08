@@ -1,9 +1,8 @@
-# Include the license file
-include LICENSE.txt
+# For unknown reasons, setuptools-scm misses this one:
+include src/ppf/sample/package_data.dat
 
-# Include the data files
-recursive-include data *
-
-# If using Python 2.6 or less, then have to include package data, even though
-# it's already declared in setup.py
-# include sample/*.dat
+# These are not needed in the distribution:
+recursive-exclude tests *
+exclude tox.ini
+exclude .gitignore
+recursive-exclude .github *

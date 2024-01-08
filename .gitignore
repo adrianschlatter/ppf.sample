@@ -8,6 +8,10 @@ __pycache__/
 *.so
 *~
 
-# due to using tox and pytest
+# due to using tox, pytest, coverage
 .tox
 .cache
+.eggs/
+.vscode/settings.json
+.coverage
+*,cover
