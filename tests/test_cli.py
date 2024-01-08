@@ -23,6 +23,11 @@ class Test_CLI(unittest.TestCase):
         else:
             self.fail('Expected System Exit')
 
+    def test_say(self):
+        """Run say"""
+        cli.CommandLineTool.run(['nameoftool', 'say', '--hello', 'world'],
+                                exit=False)
+
 
 if __name__ == '__main__':
     unittest.main()
