@@ -8,8 +8,8 @@ Sample is a package demonstrating how to package Python code
 
 try:
     from importlib_metadata import version
-except ImportError:
-    from importlib.metadata import version
+except ImportError:                                     # pragma: no cover
+    from importlib.metadata import version              # pragma: no cover
 
 
 __version__ = version(__name__)

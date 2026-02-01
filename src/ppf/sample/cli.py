@@ -20,8 +20,8 @@ See `plumbum documentation`_ for more information.
 from plumbum import cli
 try:
     from importlib.metadata import version
-except ImportError:
-    from importlib_metadata import version
+except ImportError:                                 # pragma: no cover
+    from importlib_metadata import version          # pragma: no cover
 
 
 class CommandLineTool(cli.Application):
