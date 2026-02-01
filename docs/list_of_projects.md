@@ -5,10 +5,12 @@ These are other projects I am or have been working on:
 
 * [threadlib](https://github.com/adrianschlatter/threadlib): OpenSCAD library
   providing screw threads
-* [RocketFins](https://github.com/adrianschlatter/RocketFins):
-  PET-bottle-to-Gardena-nozzle adapter for water rockets
 * [ppf.datamatrix](https://github.com/adrianschlatter/ppf.datamatrix): Python
   package to create datamatrix codes
+* [RocketFins](https://github.com/adrianschlatter/RocketFins):
+  PET-bottle-to-Gardena-nozzle adapter for water rockets
+* [ppf.angauge](https://github.com/adrianschlatter/ppf.angauge): Python package
+  to read analog gauges from images
 * [ppf.jabref](https://github.com/adrianschlatter/ppf.jabref): Python interface
   to JabRef's SQL database
 * [ppf.webref](https://github.com/adrianschlatter/ppf.webref): Flask web-app
@@ -30,12 +32,8 @@ These are other projects I am or have been working on:
   and units
 * [depaper](https://github.com/adrianschlatter/depaper): command-line tools to
   clean up scanned pages (from the time when I still used gscan2pdf)
-* [tmux.config](https://github.com/adrianschlatter/tmux.config): My personal
-  tmux configuration
-* [zsh.config](https://github.com/adrianschlatter/zsh.config): My personal zsh
-  configuration, including an auto-completion script for timewarrior
-* [vimrc](https://github.com/adrianschlatter/vimrc): My personal vim
-  configuration
+* [dotfiles](https://github.com/adrianschlatter/dotfiles): My personal dotfiles
+  (zsh, tmux, nvim, askpass ...)
 * [ppf.sample](https://github.com/adrianschlatter/ppf.sample): Template for
   Python projects. Combined experience from the other Python projects listed
   above.
