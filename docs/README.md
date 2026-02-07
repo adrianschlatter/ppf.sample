@@ -20,7 +20,7 @@ This project is configured to what I personally like to use, namely:
 * tox
 
 [Note: The first part of this document is mainly template text. But the Chapter
-"About ppf.sample" is explaning oeouf why ppf.sample is how it is.]
+"About ppf.sample" is explaning why ppf.sample is how it is.]
 
 
 # Installation
@@ -179,11 +179,12 @@ in the repository.
 
 `tox` is configured to build the package, install it in a fresh python
 environment, and run the tests (`flake8`, `python setup.py check`,
-`check-manifest`, and `pytest`). This is repeated for multiple python
-versions (configurable in `tox.ini`). By default, tox also builds a source
-distribution in every environment. If your package will be distributed as a
-universal wheel, there is a quicker way: Build the wheel first, then tell tox
-to always install this wheel into each python environment:
+`check-manifest`, and `pytest` which also takes care of running `doctest`).
+This is repeated for multiple python versions (configurable in `tox.ini`). By
+default, tox also builds a source distribution in every environment. If your
+package will be distributed as a universal wheel, there is a quicker way: Build
+the wheel first, then tell tox to always install this wheel into each python
+environment:
 
 ```shell
 cd <root of repo>
@@ -196,7 +197,7 @@ A test (on a slow computer) resulted in (11 + 283) seconds for build
 Also, you usually want to test whether users will be able to install and run
 your package, not whether they are able to build it.
 
-A word of caution on ```tox --parallel```: It is ofter much quicker than not
+A word of caution on ```tox --parallel```: It is often much quicker than not
 using ```--parallel``` but sometimes it fails (in some environments) although
 ```tox``` without ```--parallel``` does not.
 
